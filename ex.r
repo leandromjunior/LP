@@ -1,19 +1,19 @@
-#Caso o programa não rode direto, executar por partes, linha 3 -> linha 5-8 -> linha 10 -> 12 -> 14 -> 18
-
-y <- scan() #Entrar com os dados pelo terminal
+y <- scan()
 
 while (length(y) != 10){
-  print("Informe 10 valores para preencher o vetor!!!")
+  print("Informe 10 valores abaixo para preencher o vetor!!!")
+  cat("Você digitou:", length(y), "valores")
   y <- scan()
 }
 
-print(y)
+print(y[8-1])
+
+decre <- sort(y, decreasing = TRUE)
+print(decre) #Printando em ordem decrescente
 
 ordem = sort(y)
 
 print(ordem)
 
-print("Segundo maior Valor:")
-
-print(ordem[9])
+cat("Segundo maior Valor:", ordem[9])
 
